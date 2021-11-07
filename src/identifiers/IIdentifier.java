@@ -3,10 +3,10 @@ package identifiers;
 import java.util.Date;
 
 public interface IIdentifier {
-	int identifierID(int lastID);
-    int identifierID(int lastID, int increase);
-    String identifierID(String firsText, String secondText, int maximumLength);
-    String identifierID(String lastID, int maximumLength, String prefix);
-    String identifierID(String lastID, int maximumLength, String prefix, int increase);
-    String identifierIDESSALUD(String names, String lastName, String motherLastName, String gender, Date birthDate);
+	int getID(int lastID);
+    int getID(int lastID, int increase);
+    String getID(String firsText, String secondText, int maximumLength);
+    String getID(String lastID, int maximumLength, String prefix);
+    String getID(String lastID, int maximumLength, String prefix, int increase);
+    String getIDESSALUD(String names, String fatherLastName, String motherLastName, String gender, Date birthDate);
 }
